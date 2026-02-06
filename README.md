@@ -1,5 +1,5 @@
 <details>
-<summary>Documento</summary>
+<summary>Documentação</summary>
 
 📄 Leia o arquivo: [Documentação](Documentação.md)
 
