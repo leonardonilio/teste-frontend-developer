@@ -12,7 +12,7 @@ $erros = [];
 if (empty($_POST['nome']) || strlen($_POST['nome']) < 3) {
     $erros[] = "Nome inválido.";
 }
-if (empty($_POST['telefone']) || strlen($_POST['telefone']) < 10) {
+if (empty($_POST['telefone']) || strlen($_POST['telefone']) < 15) {//Contem os 11 numeros do telefone mais os espaços vazios, () e - que também é contado como um  caracter
     $erros[] = "\nTelefone inválido.";
 }
 if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
