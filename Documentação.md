@@ -1,5 +1,7 @@
 # 📌 FullStack Lab — Documentação do Projeto
-. [Link do projeto hospedado](https://fullstacklab.infinityfreeapp.com/?i=1)
+
+## [Link do projeto hospedado](https://fullstacklab.infinityfreeapp.com/?i=1)
+
 ## 📄 Sobre o Projeto
 
 O FullStack Lab é um site institucional moderno, responsivo e totalmente funcional, criado para apresentar serviços de desenvolvimento web, UI/UX, projetos, perguntas frequentes e avaliações de clientes.
