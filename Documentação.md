@@ -145,7 +145,7 @@ Esse arquivo explica detalhadamente como instalar dependências, configurar o PH
 
 Durante o desenvolvimento e execução do projeto, alguns problemas comuns podem ocorrer. Abaixo estão os mais frequentes e como resolvê-los de forma simples e objetiva.
 
-*Problema 1* — Composer não é reconhecido no terminal
+### Problema 1* — Composer não é reconhecido no terminal
 
 Ao tentar rodar comandos como:
 
@@ -175,7 +175,7 @@ C:\composer\composer.bat
 Depois reinicie o terminal.
 
 
-*Problema 2* — PHPMailer não funciona (erro de autoload)
+### *Problema 2* — PHPMailer não funciona (erro de autoload)
 
 Ao enviar o formulário aparece algo como:
 
@@ -202,7 +202,7 @@ composer dump-autoload
 composer require phpmailer/phpmailer
 ```
 
-*Problema* 3 — E-mail não envia usando Gmail
+### *Problema* 3 — E-mail não envia usando Gmail
 
 O formulário salva no banco, mas o e-mail não chega, e o log mostra erros como:
 
@@ -226,12 +226,13 @@ Como solucionar:
  Confirme usuário/senha no código
 
 
-*Problema* 4 — Banco de dados não conecta
+### *Problema* 4 — Banco de dados não conecta
 
 O console retorna:
 
+```
 Connection failed: Access denied for user...
-
+```
 
 ou a página fica “carregando” e não responde.
 
@@ -242,11 +243,13 @@ Host correto: localhost
 
 Usuário padrão no XAMPP: root
 
-Senha vazia
- Conferir se o MySQL está ativado no XAMPP
- Importar o arquivo .sql antes de usar
+Senha: ""
 
-*Problema 5* — Avaliações não aparecem na tela
+ Confere se o MySQL está ativado no XAMPP
+ 
+(Importar o arquivo .sql antes de usar)
+
+### *Problema 5* — Avaliações não aparecem na tela
 
 O envio funciona, mas a lista não atualiza.
 
@@ -275,7 +278,7 @@ Como solucionar:
 
 - Use o DevTools → Network para ver exatamente o que está sendo enviado
 
-Problema 7 — Página não carrega o PHP (download automático do arquivo)
+## *Problema 7* — Página não carrega o PHP (download automático do arquivo)
 
 Quando abre o formulário, o navegador baixa o arquivo .php ao invés de executar.
 
@@ -288,6 +291,7 @@ Como solucionar:
 Exemplo certo:
 
 http://localhost/seu-projeto/index.html
+
 
 ## 📌 Informações Importantes Sobre a Aplicação 📌
 
@@ -316,7 +320,7 @@ O FullStack Lab foi desenvolvido com a proposta de ser um projeto completo, mode
 
 ✔ Documentação profissional
 
-O objetivo é demonstrar domínio das tecnologias essenciais de um desenvolvedor Full Stack iniciante/intermediário e oferecer uma base sólida para evoluções futuras.
+O objetivo é demonstrar domínio das tecnologias essenciais de um desenvolvedor Full Stack iniciante.
 
 ### 🛠️ Manutenção e Boas Práticas
 
