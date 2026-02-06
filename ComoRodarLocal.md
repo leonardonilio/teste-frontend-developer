@@ -30,13 +30,21 @@ C:\xampp\htdocs\TESTE-FRONTEND-DEVELOPER\
 --Exemplo de estrutura atual:
 
 TESTE-FRONTEND-DEVELOPER/
+
  ├ assents/
+ 
  ├ composer/
+ 
  ├ database/
+ 
  ├ img/
+ 
  ├ php/
+ 
  │   ├ form.php
+ 
  │   ├ reviews.php
+ 
  ├ index.html
 
 ## 📦 3. Instalar dependências do Composer
@@ -204,7 +212,8 @@ try {
 ?>
 ```
 
-Se você usa senha no MySQL, altere aqui.
+Se você usa senha no MySQL, altere no codigo.
+
 
 --Exemplo de estrutura final:
 
