@@ -209,14 +209,23 @@ Se você usa senha no MySQL, altere aqui.
 --Exemplo de estrutura final:
 
 TESTE-FRONTEND-DEVELOPER/
+
  ├ assents/
+ 
  ├ composer/
+ 
  ├ database/
+ 
  ├ img/
+ 
  ├ php/
+ 
  │   ├ config.php //recém adicionado
+ 
  │   ├ form.php
+ 
  │   ├ reviews.php
+ 
  ├ index.html
 
 
