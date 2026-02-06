@@ -161,9 +161,7 @@ Clique em Create
 
 *Importe o arquivo .sql*
 
-Com o banco criado, agora:
-
-Clique em fullstack_lab na lateral esquerda
+Com o banco criado, agora, clique em fullstack_lab na lateral esquerda
 
 Vá até a aba Importar
 
@@ -179,8 +177,7 @@ Clique em Importar
 
 Se aparecer a mensagem:
 
-Importação concluída com sucesso
-
+"Importação concluída com sucesso"
 
 *➡️ O banco está pronto e funcionando.*
 
