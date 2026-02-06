@@ -4,67 +4,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Website</title>
+  <title>FullStack Lab</title>
   <link rel="stylesheet" href="assents/styles.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" /><!--Link para pegar os icones usados, como os das redes sociais-->
 
 </head>
 
 <body>
+
+  <!--===================Cabeçalho===================-->
   <header>
     <a href="#" class="logo">Full<span>Stack Lab</span></a>
     <i class="bx bx-menu" id="menu-icon"></i>
     <nav class="navbar">
-      <a href="#home" class="active">Home</a>
+      <a href="#home" class="active">Inicio</a>
       <a href="#about">Sobre nós</a>
       <a href="#services">Serviços</a>
       <a href="#projects">Projetos</a>
+      <a href="#faq">Perguntas Frequentes</a>
+      <a href="#reviews-section">Avaliações</a>
     </nav>
     <button class="gradient-btn">
-      <a href="#home">Contact Me</a></button>
+      <a href="#home">Converse Conosco</a></button>
+
   </header>
-  <!--Home Section-->
+
+
+
+  <!--===================Parte inicial===================-->
   <section class="home" id="home">
     <div class="home-content">
-      <h1>Transformamos ideias em <span>soluções digitais</span></h1>
 
-      <h3>Sites, sistemas e aplicações que geram resultados reais</h3>
+      <div id="retorno-form"></div>
 
-      <p>
-        Criamos experiências digitais modernas, rápidas e responsivas para empresas
-        que desejam atrair mais clientes, fortalecer sua marca e vender todos os dias.
-      </p>
 
-      <div class="btn-group">
-        <a href="#contact" class="btn">Ver perguntas</a>
-        <a href="#projects" class="btn">Ver projetos</a>
+      <div class="hero-badge">Telefone:(00)00000-0000</div>
+
+      <h1>
+        Transformamos ideias em
+        <span>soluções digitais</span>
+      </h1>
+      <h3>
+        Soluções personalizadas em desenvolvimento web para quem não aceita o comum. Design que impressiona, engenharia que funciona.
+      </h3>
+
+      <div class="home-img">
+        <div class="img-glow">
+          <img src="img/logo.png" alt="FullStack Lab">
+        </div>
       </div>
+
 
     </div>
 
-    <!-- FORMULÁRIO -->
+    <!--===================FORMULÁRIO===================-->
     <div class="home-form">
 
       <h2><span>Converse Conosco</span></h2>
 
-      <form action="login_register.php" method="post">
+      <form id="form-home">
 
         <div class="input-group">
           <div class="input-box">
-            <input type="text" name="nome" placeholder="Nome Completo" required>
-            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+            <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" minlength="11" maxlength="15" required>
           </div>
-          <div class="input-group"><input type="email" name="email" placeholder="Email" required></div>
 
+          <div class="input-group">
+            <input id="email" type="email" name="email" placeholder="Email" required>
+          </div>
 
-          <textarea name="ajuda" placeholder="Como podemos te ajudar?" rows="7"></textarea>
+          <textarea id="ajuda" name="ajuda" placeholder="Como podemos te ajudar?" rows="7"></textarea>
         </div>
 
-        <button class="btn">Enviar</button>
+        <button type="submit" class="btn">Enviar</button>
+
+        <!-- mensagens AJAX aqui -->
+        <div id="retorno-form"></div>
 
       </form>
 
-
+      <!--Aqui os icones sociais-->
       <div class="social-icons">
         <p>Canais de Comunicação:</p>
         <a href="https://github.com/leonardonilio">
@@ -73,17 +94,24 @@
         <a href="#">
           <i class="bx bxl-linkedin"></i>
         </a>
+        <a href="#">
+          <i class="bx bxl-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="bx bxl-instagram"></i>
+        </a>
       </div>
     </div>
 
   </section>
 
-
+  <!--===================Parte do Sobre===================-->
   <section class="about" id="about">
+    <div class="img-glow">
     <div class="about-img" id="about">
       <img src="img/logoPrin.png">
     </div>
-
+</div>
     <div class="about-content">
       <h2> <span>Sobre</span> nós</h2>
 
@@ -106,6 +134,9 @@
 
   </section>
 
+
+
+  <!--===================Parte do serviços===================-->
   <section class="services" id="services">
 
     <h2 class="heading">Serviços</h2>
@@ -125,7 +156,7 @@
       <div class="service-box">
         <div class="service-info">
           <i class="bx bx-code-alt"></i>
-          <h4>Frontend Development</h4>
+          <h4>Desenvolvimento Frontend</h4>
           <p>Na FullStack Lab, desenvolvemos interfaces modernas, responsivas e otimizadas para todos os dispositivos.
             Nosso foco é criar experiências fluidas, rápidas e visualmente atraentes, utilizando tecnologias como HTML,
             CSS, JavaScript e frameworks avançados para entregar produtos que encantam desde o primeiro clique.
@@ -138,7 +169,7 @@
           <i class="bx bx-bracket-curly">
             <img src="img/bracket-curly (1).png" alt="">
           </i>
-          <h4>Backend Development</h4>
+          <h4>Desenvolvimento Backend</h4>
           <p>Construímos estruturas robustas e seguras que garantem o funcionamento eficiente de qualquer aplicação. A
             FullStack Lab desenvolve back-ends escaláveis, integrados a bancos de dados e prontos para alto desempenho,
             sempre priorizando segurança, organização e manutenção simples.
@@ -148,6 +179,8 @@
 
     </div>
   </section>
+
+  <!--===================Projetos ficticíos===================-->
   <section class="projects" id="projects">
     <h2 class="heading">Projetos</h2>
 
@@ -159,7 +192,7 @@
           Criamos uma interface futurista que combina tecnologia, arte e interação humana, entregando
           uma experiência visual marcante e moderna. Ideal para empresas que desejam destacar
           inovação e automação em seus serviços.</p>
-        <div class="btn">Revisar Projetos</div>
+
       </div>
 
       <div class="project-card">
@@ -171,7 +204,7 @@
           criando uma navegação fluida e elegante que aumenta a confiança do cliente e impulsiona as vendas.
         </p>
 
-        <div class="btn">Revisar Projetos</div>
+
       </div>
 
       <div class="project-card">
@@ -183,7 +216,7 @@
           permitindo ao usuário operar com confiança enquanto acompanha indicadores em tempo real.
         </p>
 
-        <div class="btn">Revisar Projetos</div>
+
       </div>
 
       <div class="project-card">
@@ -196,7 +229,7 @@
           e precisão.
         </p>
 
-        <div class="btn">Revisar Projetos</div>
+
       </div>
 
       <div class="project-card">
@@ -208,7 +241,7 @@
           valoriza a criatividade da marca e reforça autoridade no mercado de comunicação e branding.
         </p>
 
-        <div class="btn">Revisar Projetos</div>
+
       </div>
 
       <div class="project-card">
@@ -217,13 +250,16 @@
         <p>Projeto experimental focado em identidade visual, interação e narrativa digital.
           Criado para explorar novas formas de comunicação entre arte, tecnologia e experiência do usuário, combinando
           design impactante, tipografia expressiva e layout não convencional.</p>
-        <div class="btn">Revisar Projetos</div>
+
       </div>
 
     </div>
 
   </section>
 
+
+
+  <!--===================Perguntas Frequentes===================-->
   <section id="faq" class="faq-section">
     <h2>Perguntas <span>Frequentes</span></h2>
 
@@ -275,6 +311,52 @@
 
 
 
+<!--===================Avaliações===================-->
+  <section class="reviews-section" id="reviews-section">
+
+    <h2 class="heading">Avaliações</h2>
+
+    <!-- FORMULÁRIO PARA CRIAR AVALIAÇÃO -->
+    <form id="reviewForm" method="POST" class="contact-form">
+
+      <div class="input-row">
+        <div class="input-box">
+          <input type="text" name="nome" placeholder="Seu nome" required />
+        </div>
+
+        <div class="input-box">
+          <select name="estrelas" class="estrelas" required>
+            <option value="">Estrelas</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-box textarea-box">
+        <textarea name="comentario" rows="6" placeholder="Escreva sua avaliação..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Enviar Avaliação</button>
+
+    </form>
+
+
+    <h2 class="heading"><span>O que dizem</span> nossos clientes</h2>
+    <!-- Lista de Avaliações-->
+    <div class="reviews-container" id="reviewsList">
+
+
+    </div>
+
+  </section>
+
+<!--===================Parte Final===================-->
+  </section>
+
   <section class="cta-section">
     <div class="cta-container">
 
@@ -299,7 +381,7 @@
   </section>
 
 
-
+<!--===================Rodapé===================-->
   <footer class="footer">
     <div class="social-icons">
       <a href="https://github.com/leonardonilio">
@@ -308,27 +390,43 @@
       <a href="#">
         <i class="bx bxl-linkedin"></i>
       </a>
+      <a href="#">
+        <i class="bx bxl-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="bx bxl-instagram"></i>
+      </a>
+
     </div>
 
     <ul class="list">
       <li>
-        <a href="#services">Serviços</a>
+      <a href="#about">Sobre</a>  
       </li>
       <li>
-        <a href="#about">Sobre</a>
+              <a href="#services">Serviços</a>
       </li>
       <li>
         <a href="#projects">Projetos</a>
       </li>
       <li>
-        <a href="#contact">Contato</a>
+        <a href="#faq">Perguntas Frequentes</a>
       </li>
-    </ul>
+      <li>
+        <a href="#reviews-section">Avaliações</a>  
+      </li>
 
-    <p class="copyright">Full<span>Stack Lab</span>. ©Todos os direitos reservados. 2026</p>
-    <p><a href="https://www.freepik.com/free-photo/medium-shot-smiley-colleagues-job_25810085.htm">Image by freepik</a></p>
+    </ul>
+    <p class="copyright">Telefone:(00)00000-0000. CNPJ:00.000.000/0000-00. Termos de Uso <br>Full<span>Stack Lab</span>. ©Todos os direitos reservados. 2026</p>
   </footer>
+
+<!--Script e caixa de dialogo-->
   <script src="assents/script.js"></script>
+  <div id="alertBox" class="alert hidden">
+    <p id="alertMessage"></p>
+    <button onclick="closeAlert()">OK</button>
+  </div>
+
 </body>
 
 </html>
