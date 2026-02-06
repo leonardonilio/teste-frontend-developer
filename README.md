@@ -1,3 +1,9 @@
+<details>
+<summary>Documento</summary>
+
+📄 Leia o arquivo: [Documentação](Documentação.md)
+
+</details>
 # Teste para estágio Frontend e Full-Stack
 
 ## Sobre a Ellos Design
